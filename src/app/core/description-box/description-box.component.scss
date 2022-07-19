@@ -1,0 +1,50 @@
+.how-to-play {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 27px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  max-width: 425px;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: left;
+}
+.how-to-play .title-text {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.how-to-play.title-text .main-text {
+  padding-left: 2px;
+}
+.how-to-play .how-to-play-steps {
+  list-style-position: inside;
+  margin-left: 5px;
+}
+.how-to-play p {
+  margin-top: 8px;
+}
+.how-to-play .pay-attention {
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-top: 16px;
+}
+.how-to-play .attention-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  margin-left: 4px;
+}
+@media (max-width: 768px) {
+  .how-to-play {
+    padding: 24px 16px;
+  }
+}

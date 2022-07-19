@@ -1,0 +1,194 @@
+.main {
+  margin-top: 16px;
+  font-family: Poppins, sans-serif;
+}
+.main .main-text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 90%;
+  letter-spacing: -0.015em;
+}
+@media (max-width: 768px) {
+  .main .main-text {
+    font-size: 40px;
+  }
+}
+
+.coins {
+  position: absolute;
+  bottom: 0;
+  left: 51%;
+  transform: translate(-50%, 0);
+  width: 45vw;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+
+  &__left-coin {
+    width: 150px;
+    height: 150px;
+    animation: MoveUpDown 3s linear infinite;
+  }
+
+  &__right-coin {
+    position: relative;
+    top: 140px;
+    width: 110px;
+    height: 110px;
+    animation: MoveUpDown 2s linear infinite;
+  }
+}
+
+/* ========== INFO ========== */
+.info {
+  margin-top: 23px;
+  font-family: Inter, sans-serif;
+  font-size: 29.4318px;
+  font-weight: 300;
+  line-height: 111.5%;
+  letter-spacing: -0.02em;
+}
+.info .info-text {
+  color: #fff;
+  font-size: 29.5px;
+}
+@media (max-width: 768px) {
+  .info .info-text {
+    font-size: 16px;
+  }
+}
+
+.illustration-box {
+  height: 650px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -20;
+  overflow: hidden;
+}
+.illustration-box .shimmer {
+  height: 1350px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: rotate-center;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.illustration-box .coin-pot {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+}
+.illustration-box .left-coin {
+  position: absolute;
+  left: 32%;
+  bottom: 120px;
+  opacity: 0;
+}
+.illustration-box .right-coin {
+  position: absolute;
+  right: 32%;
+  bottom: 70px;
+  opacity: 0;
+}
+
+.night-stars-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.night-stars-box .night-stars {
+  position: absolute;
+  bottom: -50px;
+}
+
+.night-star-1 {
+  animation: random-star-1 5s ease-in-out infinite alternate, shooting-star 5s linear infinite;
+  left: 50%;
+}
+
+.night-star-2 {
+  animation: random-star-2 8s ease-in-out 0.5s infinite alternate, shooting-star 8s linear 0.5s infinite;
+  left: 38%;
+}
+
+.night-star-3 {
+  animation: random-star-1 10s ease-in-out 3s infinite alternate, shooting-star 10s linear 3s infinite;
+  left: 40%;
+}
+
+.night-star-4 {
+  animation: random-star-2 8s ease-in-out 7s infinite alternate, shooting-star 8s linear 7s infinite;
+  left: 45%;
+}
+
+.night-star-5 {
+  animation: random-star-1 5s ease-in-out 1s infinite alternate, shooting-star 5s linear 1s infinite;
+  left: 55%;
+}
+
+@media (max-width: 768px) {
+  .illustration-box .coin-pot {
+    width: 400px;
+  }
+  .illustration-box .left-coin {
+    left: 5%;
+  }
+  .illustration-box .right-coin {
+    right: 5%;
+  }
+  .coins {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 135vw;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .illustration-box .shimmer {
+    height: 1250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: rotate-center;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+  .coins {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 114vw;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .illustration-box .shimmer {
+    height: 1250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: rotate-center;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}

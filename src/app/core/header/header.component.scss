@@ -1,0 +1,42 @@
+.top-stars {
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: -10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 104px;
+  cursor: pointer;
+}
+@media (max-width: 960px) {
+  .navbar {
+    padding: 24px 20px;
+  }
+}
+.navbar .calendar {
+  display: flex;
+  font-family: Inter, sans-serif;
+  text-align: left;
+}
+.navbar .calendar-text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
