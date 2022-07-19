@@ -1,4 +1,4 @@
-.container {
+.main-container {
   max-width: 1350px;
   padding: 0 50px;
   text-align: center;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.how-to-play {
+.play-box {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -23,37 +23,45 @@
   font-size: 14px;
   line-height: 160%;
   text-align: left;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__steps {
+    list-style-position: inside;
+    margin-left: 5px;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+
+  &__attention {
+    display: flex;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 16px;
+
+    &__text {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 160%;
+      letter-spacing: -0.02em;
+      margin-left: 4px;
+    }
+  }
+
 }
-.how-to-play .title-text {
-  text-align: center;
-  margin-bottom: 16px;
+
+.bold-text {
+  font-weight: 700 !important;
 }
-.how-to-play.title-text .main-text {
-  padding-left: 2px;
-}
-.how-to-play .how-to-play-steps {
-  list-style-position: inside;
-  margin-left: 5px;
-}
-.how-to-play p {
-  margin-top: 8px;
-}
-.how-to-play .pay-attention {
-  display: flex;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  margin-top: 16px;
-}
-.how-to-play .attention-text {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 160%;
-  letter-spacing: -0.02em;
-  margin-left: 4px;
-}
+
 @media (max-width: 768px) {
-  .how-to-play {
+  .play-box {
     padding: 24px 16px;
   }
 }
