@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public readonly title = 'Team-Apt-Assessment';
-  public readonly buttonText: string = 'Play The Game'
+  public readonly buttonText: string = 'Play The Game';
 }
